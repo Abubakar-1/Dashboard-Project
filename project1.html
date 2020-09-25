@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project1.css">
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="fontawesome/css/all.css"> -->
+    <title>Project</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="nav" id="nav">
+            <div class="menu">
+                <div class="logo">
+                    <img src="logo.png" alt="">
+                </div>
+                <div class="menu1">
+                    <div class="icon">
+                        <i class='bx bx-happy-heart-eyes bx-border-circle icon-general'></i>
+                    </div>
+                    <div class="texts">
+                        <p>Fine Art</p>
+                        <p>Workspace</p>
+                    </div>
+                    <div class="arrow-icon">
+                        <i class="fas fa-angle-up"></i>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+                <div class="menus">
+                    <span class="icon-div">
+                        <i class='bx bx-tachometer icon-general'></i>
+                    </span>
+                    <span class="name">Dashboard</span>
+                </div>
+                <div class="menus">
+                    <span class="icon-div">
+                        <i class="fas fa-user-friends icon-general"></i>
+                    </span>
+                    <span class="name">Community</span>
+                </div>
+                <div class="menus">
+                    <span class="icon-div">
+                        <i class="far fa-lightbulb icon-general"></i>
+                    </span>
+                    <span class="name">Inspirations</span>
+                </div>
+                <div class="menus">
+                    <span class="icon-div">
+                        <i class="far fa-comments icon-general"></i>
+                    </span>
+                    <span class="name">Chat</span>
+                </div>
+                <div class="menus">
+                    <span class="icon-div">
+                        <i class="fas fa-cog icon-general"></i>
+                    </span>
+                    <span class="name">Settings</span>
+                </div>
+                <div class="menus">
+                    <span class="name shortcut">SHORTCUTS</span>
+                </div>
+                <div class="menus">
+                    <span class="icon-div">
+                        <i class='bx bx-scan icon-general'></i>
+                    </span>
+                    <span class="name">Scan</span>
+                </div>
+                <div class="menus">
+                    <span class="icon-div">
+                        <i class='bx bx-pen icon-general'></i>
+                    </span>
+                    <span class="name">Draw</span>
+                </div>
+                <div class="menus">
+                    <span class="icon-div">
+                        <i class='bx bx-plus icon-general'></i>
+                    </span>
+                    <span class="name">Add shortcut</span>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-nav" id="mobile-nav">
+            <div class="mobile-menu">
+                <div class="logo-side">
+                    <div class="logo">
+                        <img src="logo.png" alt="">
+                    </div>
+                    <span class="exit-icon" onclick="removeNav()">
+                        <i class='bx bx-x icon-general'></i>
+                    </span>
+                </div>
+                <div class="mobile-menu1">
+                    <div class="icon">
+                        <i class='bx bx-happy-heart-eyes bx-border-circle icon-general'></i>
+                    </div>
+                    <div class="texts">
+                        <p>Fine Art</p>
+                        <p>Workspace</p>
+                    </div>
+                    <div class="arrow-icon">
+                        <i class="fas fa-angle-up"></i>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+                <div class="mobile-menus">
+                    <span class="icon-div">
+                        <i class='bx bx-tachometer icon-general'></i>
+                    </span>
+                    <span class="name">Dashboard</span>
+                </div>
+                <div class="mobile-menus">
+                    <span class="icon-div">
+                        <i class="fas fa-user-friends icon-general"></i>
+                    </span>
+                    <span class="name">Community</span>
+                </div>
+                <div class="mobile-menus">
+                    <span class="icon-div">
+                        <i class="far fa-lightbulb icon-general"></i>
+                    </span>
+                    <span class="name">Inspirations</span>
+                </div>
+                <div class="mobile-menus">
+                    <span class="icon-div">
+                        <i class="far fa-comments icon-general"></i>
+                    </span>
+                    <span class="name">Chat</span>
+                </div>
+                <div class="mobile-menus">
+                    <span class="icon-div">
+                        <i class="fas fa-cog icon-general"></i>
+                    </span>
+                    <span class="name">Settings</span>
+                </div>
+                <div class="mobile-menus">
+                    <span class="name shortcut">SHORTCUTS</span>
+                </div>
+                <div class="mobile-menus">
+                    <span class="icon-div">
+                        <i class='bx bx-scan icon-general'></i>
+                    </span>
+                    <span class="name">Scan</span>
+                </div>
+                <div class="mobile-menus">
+                    <span class="icon-div">
+                        <i class='bx bx-pen icon-general'></i>
+                    </span>
+                    <span class="name">Draw</span>
+                </div>
+                <div class="mobile-menus">
+                    <span class="icon-div">
+                        <i class='bx bx-plus icon-general'></i>
+                    </span>
+                    <span class="name">Add shortcut</span>
+                </div>
+            </div>
+        </div>
+        <!-- End of Mobile Menu -->
+        <div class="content">
+            <div class="topbar">
+                <div class="topbar-icons">
+                    <span class="top-icon" id="menu">
+                        <i class='bx bx-menu bx-border-circle' onclick="openNav()"></i>
+                    </span>
+                    <span class="top-icon">
+                        <i class='bx bx-search bx-border-circle'></i>
+                    </span>
+                    <span class="top-icon">
+                        <i class='bx bx-bell bx-border-circle'></i>
+                    </span>
+                    <span class="top-icon">
+                        <i class='bx bx-user bx-border-circle'></i>
+                    </span>
+                </div>
+            </div>
+            <div class="header">
+                <h1 class="main-header">Hello Daniel</h1>
+                <p>Do you already know what you will design today? Choose <i class='bx bx-bulb header-icon bx-border'></i>  to get inspired 🤗</p>
+            </div>
+            <div class="box-content">
+                <div class="box">
+                    <div class="svg">
+                        <img src="box-1-pic.jpg" alt="">
+                    </div>
+                    <div class="box-header">Add New Project</div>
+                    <p class="sub-text">Still not enough? Click on a tile to add a new project</p>
+                </div>
+                <div class="box-new">
+                    <div class="box-top">
+                        <span class="box-top-icons">
+                        <i class='bx bx-star'></i>&nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-h"></i>
+                        </span>
+                    </div>
+                    <div class="box-user">
+                        <img src="woman.jpg" alt="">
+                    </div>
+                    <div class="box-texts">
+                        <div class="box-tests-header">Friendly Partners</div>
+                        <br>
+                        <p>Within the excercises, we design a room in a Scandinavian style</p>
+                        <br>
+                    </div>
+                    <div class="box-footer">
+                        <div class="box-task">
+                            <img src="scan-box.jpg" alt="">
+                            <p>Task: Practice</p>
+                        </div>
+                        <div class="box-date">
+                            <img src="calender.jpg" alt="">
+                            <p>Date: 01.01.2020</p>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box-new">
+                    <div class="box-top">
+                        <span class="box-top-icons">
+                        <i class='bx bx-star'></i>&nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-h"></i>
+                        </span>
+                    </div>
+                    <div class="box-user">
+                        <img src="woman.jpg" alt="">
+                    </div>
+                    <div class="box-texts">
+                        <div class="box-tests-header">Friendly Partners</div>
+                        <br>
+                        <p>Within the excercises, we design a room in a Scandinavian style</p>
+                        <br>
+                    </div>
+                    <div class="box-footer">
+                        <div class="box-task">
+                            <img src="scan-box.jpg" alt="">
+                            <p>Task: Practice</p>
+                        </div>
+                        <div class="box-date">
+                            <img src="calender.jpg" alt="">
+                            <p>Date: 01.01.2020</p>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box-new">
+                    <div class="box-top">
+                        <span class="box-top-icons">
+                        <i class='bx bx-star'></i>&nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-h"></i>
+                        </span>
+                    </div>
+                    <div class="box-user">
+                        <img src="woman.jpg" alt="">
+                    </div>
+                    <div class="box-texts">
+                        <div class="box-tests-header">Friendly Partners</div>
+                        <br>
+                        <p>Within the excercises, we design a room in a Scandinavian style</p>
+                        <br>
+                    </div>
+                    <div class="box-footer">
+                        <div class="box-task">
+                            <img src="scan-box.jpg" alt="">
+                            <p>Task: Practice</p>
+                        </div>
+                        <div class="box-date">
+                            <img src="calender.jpg" alt="">
+                            <p>Date: 01.01.2020</p>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box-new">
+                    <div class="box-top">
+                        <span class="box-top-icons">
+                        <i class='bx bx-star'></i>&nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-h"></i>
+                        </span>
+                    </div>
+                    <div class="box-user">
+                        <img src="woman.jpg" alt="">
+                    </div>
+                    <div class="box-texts">
+                        <div class="box-tests-header">Friendly Partners</div>
+                        <br>
+                        <p>Within the excercises, we design a room in a Scandinavian style</p>
+                        <br>
+                    </div>
+                    <div class="box-footer">
+                        <div class="box-task">
+                            <img src="scan-box.jpg" alt="">
+                            <p>Task: Practice</p>
+                        </div>
+                        <div class="box-date">
+                            <img src="calender.jpg" alt="">
+                            <p>Date: 01.01.2020</p>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box-new">
+                    <div class="box-top">
+                        <span class="box-top-icons">
+                        <i class='bx bx-star'></i>&nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-h"></i>
+                        </span>
+                    </div>
+                    <div class="box-user">
+                        <img src="woman.jpg" alt="">
+                    </div>
+                    <div class="box-texts">
+                        <div class="box-tests-header">Friendly Partners</div>
+                        <br>
+                        <p>Within the excercises, we design a room in a Scandinavian style</p>
+                        <br>
+                    </div>
+                    <div class="box-footer">
+                        <div class="box-task">
+                            <img src="scan-box.jpg" alt="">
+                            <p>Task: Practice</p>
+                        </div>
+                        <div class="box-date">
+                            <img src="calender.jpg" alt="">
+                            <p>Date: 01.01.2020</p>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box-new">
+                    <div class="box-top">
+                        <span class="box-top-icons">
+                        <i class='bx bx-star'></i>&nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-h"></i>
+                        </span>
+                    </div>
+                    <div class="box-user">
+                        <img src="woman.jpg" alt="">
+                    </div>
+                    <div class="box-texts">
+                        <div class="box-tests-header">Friendly Partners</div>
+                        <br>
+                        <p>Within the excercises, we design a room in a Scandinavian style</p>
+                        <br>
+                    </div>
+                    <div class="box-footer">
+                        <div class="box-task">
+                            <img src="scan-box.jpg" alt="">
+                            <p>Task: Practice</p>
+                        </div>
+                        <div class="box-date">
+                            <img src="calender.jpg" alt="">
+                            <p>Date: 01.01.2020</p>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box-new">
+                    <div class="box-top">
+                        <span class="box-top-icons">
+                        <i class='bx bx-star'></i>&nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-h"></i>
+                        </span>
+                    </div>
+                    <div class="box-user">
+                        <img src="woman.jpg" alt="">
+                    </div>
+                    <div class="box-texts">
+                        <div class="box-tests-header">Friendly Partners</div>
+                        <br>
+                        <p>Within the excercises, we design a room in a Scandinavian style</p>
+                        <br>
+                    </div>
+                    <div class="box-footer">
+                        <div class="box-task">
+                            <img src="scan-box.jpg" alt="">
+                            <p>Task: Practice</p>
+                        </div>
+                        <div class="box-date">
+                            <img src="calender.jpg" alt="">
+                            <p>Date: 01.01.2020</p>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box-new">
+                    <div class="box-top">
+                        <span class="box-top-icons">
+                        <i class='bx bx-star'></i>&nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-ellipsis-h"></i>
+                        </span>
+                    </div>
+                    <div class="box-user">
+                        <img src="woman.jpg" alt="">
+                    </div>
+                    <div class="box-texts">
+                        <div class="box-tests-header">Friendly Partners</div>
+                        <br>
+                        <p>Within the excercises, we design a room in a Scandinavian style</p>
+                        <br>
+                    </div>
+                    <div class="box-footer">
+                        <div class="box-task">
+                            <img src="scan-box.jpg" alt="">
+                            <p>Task: Practice</p>
+                        </div>
+                        <div class="box-date">
+                            <img src="calender.jpg" alt="">
+                            <p>Date: 01.01.2020</p>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                            <i class='bx bx-user bx-border-circle'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            const mobileNav = document.getElementById('mobile-nav');
+            mobileNav.style.display = 'block';
+        }
+        function removeNav() {
+            const mobileNav = document.getElementById('mobile-nav');
+            mobileNav.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
